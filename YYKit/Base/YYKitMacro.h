@@ -136,6 +136,8 @@ YY_EXTERN_C_BEGIN
     }];
 
  */
+
+#if ! (__has_include(<ReactiveObjC/RACEXTScope.h>) || __has_include("RACEXTScope.h"))
 #ifndef weakify
     #if DEBUG
         #if __has_feature(objc_arc)
@@ -167,7 +169,7 @@ YY_EXTERN_C_BEGIN
         #endif
     #endif
 #endif
-
+#endif
 
 /**
  Convert CFRange to NSRange
